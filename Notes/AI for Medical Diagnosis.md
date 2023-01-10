@@ -18,4 +18,18 @@ __Handling Class Imbalance and Small Training Sets__
 - Multi-task refers to different tasks that are related to each other, and can be countered with _multi-task learning_ to get better performance on each task.
 - Dataset size refers to the small dataset size, and can be countered with _transfer learning_ to get better performance on the task.
 
+__Checking your Model Performance__
+
+- 3 key challenges:
+   1. Patient Overlap
+   2. Set Sampling
+   3. Ground Truth
+- Patient overlap is caused by incorrect data splitting. The recommended way to split medical data is to _split by patient_.
+- We need to make sure we sample from both the normal and target sets.
+- In medicine, inter-observer dissagreement is prevalent, so using _consensus voting_ is a potential solution.
+
+
+__Quiz__
+- [Disease Detection with Computer Vision](../Quizes/C1W1.md)
+
 __NOTES IN PROGRESS...__
