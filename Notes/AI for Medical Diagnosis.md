@@ -67,4 +67,8 @@ __Practical Considerations__
 - _Prospective data_ is collected from patients specifically for the purpose of training a model, while _retrospective data_ is collected from patients for clinical purposes and then retrospectively used for training a model.
 - _Decision curve analysis_ (DCA) is a method for evaluating a diagnostic or predictive model that seeks to evaluate the clinical benefit of a model by plotting the net benefit of the model's predictions against various threshold probabilities, while _Randomized control trial_ (RCT) is a research study in which patients are randomly assigned to one of two or more groups, one that receives a treatment and the other a control, the treatment and control groups are followed and compared for a designated outcome. Both methods are commonly used for measure patient outcomes.
 
+__Quiz__
+
+- [Segmentation on Medical mages](../Quizes/C1W3.md)
+
 __NOTES IN PROGRESS...__
