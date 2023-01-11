@@ -49,4 +49,8 @@ __Interpreting Confidence Intervals Correctly__
 
 - _Confidence intervals_ in statistics are a range of values, calculated from a sample of data, that are used to provide an estimate of an unknown population parameter and indicate the level of uncertainty surrounding that estimate; however, it is commonly mis-interpreted as the the probability of the true parameter falling in that interval, it is rather an estimation of how often the intervals will include the true parameter if many samples were taken and intervals were constructed.
 
+__Quiz__
+
+- [Evaluating Machine Learning Models](../Quizes/C1W2.md)
+
 __NOTES IN PROGRESS...__
