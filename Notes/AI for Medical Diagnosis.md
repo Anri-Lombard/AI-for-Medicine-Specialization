@@ -62,4 +62,9 @@ __Image Segmentation__
 - _U-Nets_ are a type of convolutional neural network (CNN) architecture for image segmentation, which uses a "U" shaped architecture consisting of a contracting path to capture context and a symmetric expanding path that enables precise localization.
 - _Soft Dice loss_ is a measure of the similarity between two sets of data, commonly used as a loss function for training CNNs in semantic segmentation tasks, which calculates the Sørensen–Dice coefficient (a measure of similarity between two sets) with a smoothing term to address the class imbalance problem.
 
+__Practical Considerations__
+
+- _Prospective data_ is collected from patients specifically for the purpose of training a model, while _retrospective data_ is collected from patients for clinical purposes and then retrospectively used for training a model.
+- _Decision curve analysis_ (DCA) is a method for evaluating a diagnostic or predictive model that seeks to evaluate the clinical benefit of a model by plotting the net benefit of the model's predictions against various threshold probabilities, while _Randomized control trial_ (RCT) is a research study in which patients are randomly assigned to one of two or more groups, one that receives a treatment and the other a control, the treatment and control groups are followed and compared for a designated outcome. Both methods are commonly used for measure patient outcomes.
+
 __NOTES IN PROGRESS...__
