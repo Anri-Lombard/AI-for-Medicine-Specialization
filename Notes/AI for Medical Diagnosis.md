@@ -28,8 +28,16 @@ __Checking your Model Performance__
 - We need to make sure we sample from both the normal and target sets.
 - In medicine, inter-observer dissagreement is prevalent, so using _consensus voting_ is a potential solution.
 
-
 __Quiz__
 - [Disease Detection with Computer Vision](../Quizes/C1W1.md)
+
+## Week 2: Evaluating Models
+
+__Key Evaluation Metrics__
+
+- Accuracy = sensitivity * prevalence + specificity * (1 - prevalence)
+  - _Sensitivity_ is the proportion of positive examples that are correctly identified as positive.
+  - _Specificity_ is the proportion of negative examples that are correctly identified as negative.
+  - _Prevalence_ is the proportion of positive examples in the dataset.
 
 __NOTES IN PROGRESS...__
