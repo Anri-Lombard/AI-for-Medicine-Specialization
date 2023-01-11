@@ -53,4 +53,13 @@ __Quiz__
 
 - [Evaluating Machine Learning Models](../Quizes/C1W2.md)
 
+## Week 3: Image Segmentation on MRI Images
+
+__Image Segmentation__
+
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](U-Net.pdf)
+- _Image segmentation_ for brain tumors involves registering an image of the brain to a reference image, and then using techniques such as 2D or 3D segmentation to identify and separate the tumor from healthy tissue; 2D segmentation methods may struggle with accurately capturing the shape of the tumor and its relationship to surrounding structures, while 3D methods can be computationally intensive and require larger amounts of data.
+- _U-Nets_ are a type of convolutional neural network (CNN) architecture for image segmentation, which uses a "U" shaped architecture consisting of a contracting path to capture context and a symmetric expanding path that enables precise localization.
+- _Soft Dice loss_ is a measure of the similarity between two sets of data, commonly used as a loss function for training CNNs in semantic segmentation tasks, which calculates the Sørensen–Dice coefficient (a measure of similarity between two sets) with a smoothing term to address the class imbalance problem.
+
 __NOTES IN PROGRESS...__
