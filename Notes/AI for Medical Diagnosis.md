@@ -40,4 +40,9 @@ __Key Evaluation Metrics__
   - _Specificity_ is the proportion of negative examples that are correctly identified as negative.
   - _Prevalence_ is the proportion of positive examples in the dataset.
 
+__Threshold and Evaluation Metrics__
+
+- _Threshold_ is a value that is used to make a decision or to classify an element of a set, by comparing it to the threshold and determining which of two possible regions the value falls into.
+- _ROC Curve_ is a graphical representation of the performance of a binary classifier, plotted as the true positive rate against the false positive rate at different threshold settings.
+
 __NOTES IN PROGRESS...__
