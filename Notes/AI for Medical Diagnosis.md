@@ -45,4 +45,8 @@ __Threshold and Evaluation Metrics__
 - _Threshold_ is a value that is used to make a decision or to classify an element of a set, by comparing it to the threshold and determining which of two possible regions the value falls into.
 - _ROC Curve_ is a graphical representation of the performance of a binary classifier, plotted as the true positive rate against the false positive rate at different threshold settings.
 
+__Interpreting Confidence Intervals Correctly__
+
+- _Confidence intervals_ in statistics are a range of values, calculated from a sample of data, that are used to provide an estimate of an unknown population parameter and indicate the level of uncertainty surrounding that estimate; however, it is commonly mis-interpreted as the the probability of the true parameter falling in that interval, it is rather an estimation of how often the intervals will include the true parameter if many samples were taken and intervals were constructed.
+
 __NOTES IN PROGRESS...__
