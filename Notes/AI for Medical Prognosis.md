@@ -47,4 +47,14 @@ __Identifying Missing Data__
      
   It is important to understand the pattern of missingness in data because it can affect the validity of the results obtained from the analysis.
 
+__Using Imputation to Handle Missing Data__
 
+- Imputation of missing data is a technique used to substitute the missing values with estimated ones. There are various methods for imputation such as:
+
+    1. Mean/Median imputation: Replacing missing values with the mean or median of the non-missing values for that variable.
+    2. Random sample imputation: Replacing missing data with random values that are similar to the non-missing data.
+    3. Regression imputation: Modeling the relationship between the missing data and other variables and then using the model to predict the missing values.
+    4. Multiple imputation: Creating multiple imputed datasets by imputing the missing data multiple times and then combining the results.
+    5. Hot-Deck imputation: replacing missing values with values from similar observations.
+
+    It's important to note that imputation of missing data can introduce bias into the dataset, so it is important to choose an appropriate method and evaluate the impact of imputation on the analysis.
