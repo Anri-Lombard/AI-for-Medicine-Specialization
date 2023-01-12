@@ -23,3 +23,7 @@ __Evaluating Prognostic Models__
     When evaluating the performance of a prognostic model, a greater number of concordant pairs and a lower number of discordant pairs are desirable. The ratio of concordant pairs to discordant pairs is commonly used to assess the model's performance and it is known as the concordance index or c-index. The c-index is a measure of the model's ability to discriminate between high- and low-risk individuals. It ranges between 0.5 (random prediction) and 1.0 (perfect prediction)
 
 - The _c-index_, also known as the concordance index, is a measure of the performance of a prognostic model that ranges between 0.5 and 1, it assesses the model's ability to discriminate between high- and low-risk individuals, by counting the number of concordant pairs (agreements between predicted and observed event) and discordant pairs (disagreements between predicted and observed event) among all pairs of individuals.
+
+__Quiz__
+
+- [Prognostic Models](../Quizes/C2W1.md)
