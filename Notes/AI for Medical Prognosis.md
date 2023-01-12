@@ -36,3 +36,15 @@ __Tree-based Models__
 - _Preventing overfitting_ in decision tree models can be achieved by techniques such as pruning, setting minimum number of samples required at a leaf node, or by using ensemble methods such as random forests.
 - _Random forests_ are an ensemble learning method that combines multiple decision trees to improve the overall performance and reduce overfitting by averaging the results of multiple decision trees trained on different subsets of the data.
 - Ensemble methods such as _gradient boosting_, _XGBoost_, and _LightGBM_ are tree-based algorithms that create a sequence of decision trees to improve the overall performance by combining the predictions of multiple weak decision trees, where gradient boosting and XGBoost use gradient descent for optimization, LightGBM uses a novel technique called gradient-based one-side sampling (GOSS) and exclusive feature bundling (EFB) which results in faster training time.
+
+__Identifying Missing Data__
+
+- Missing data can be classified into three categories:
+
+  1. Missing Completely at Random (MCAR) - the data is missing completely at random and there is no relationship between the missing data and the other variables in the dataset.
+  2. Missing at Random (MAR) - the data is missing at random and the probability of the data being missing is related to other variables in the dataset but not the missing data itself.
+  3. Not Missing at Random (NMAR) - the data is not missing at random and the probability of the data being missing is related to the missing data itself.
+     
+  It is important to understand the pattern of missingness in data because it can affect the validity of the results obtained from the analysis.
+
+
