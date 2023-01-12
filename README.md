@@ -6,7 +6,7 @@ This repository includes my notes on the AI for Medicine Specialization. Notes a
 
 ## Specialization Structure and Notes
 1. [AI for Medical Diagnosis](Notes/AI%20for%20Medical%20Diagnosis.md)
-2. AI for Medical Prognosis
+2. [AI for Medical Prognosis](Notes/AI%20for%20Medical%20Prognosis.md)
 3. AI for Medical Treatment
 
 __NOTES IN PROGRESS...__
