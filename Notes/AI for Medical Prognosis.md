@@ -27,3 +27,12 @@ __Evaluating Prognostic Models__
 __Quiz__
 
 - [Prognostic Models](../Quizes/C2W1.md)
+
+## Week 2: Prognosis with Tree-based Models
+
+__Tree-based Models__
+
+- A _decision tree_ for medical prognosis is a model that uses a flowchart-like structure to predict the outcome of a patient's condition by making sequential decisions based on the values of certain features, dividing the feature space into rectangular regions (horizontally and vertically) with each internal node representing a feature and each leaf node representing a class label.
+- _Preventing overfitting_ in decision tree models can be achieved by techniques such as pruning, setting minimum number of samples required at a leaf node, or by using ensemble methods such as random forests.
+- _Random forests_ are an ensemble learning method that combines multiple decision trees to improve the overall performance and reduce overfitting by averaging the results of multiple decision trees trained on different subsets of the data.
+- Ensemble methods such as _gradient boosting_, _XGBoost_, and _LightGBM_ are tree-based algorithms that create a sequence of decision trees to improve the overall performance by combining the predictions of multiple weak decision trees, where gradient boosting and XGBoost use gradient descent for optimization, LightGBM uses a novel technique called gradient-based one-side sampling (GOSS) and exclusive feature bundling (EFB) which results in faster training time.
