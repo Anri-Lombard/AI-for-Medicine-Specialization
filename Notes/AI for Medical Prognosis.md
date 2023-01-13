@@ -62,3 +62,19 @@ __Using Imputation to Handle Missing Data__
 __Quiz__
 
 - [Decision Trees, Missing Data and Imputation](../Quizes/C2W2.md)
+
+## Week 3: Survival Models and Time
+
+__Survival Estimates__
+
+- A survival function, also known as a reliability function, is a probability distribution function used in survival analysis to describe the probability that an individual will survive beyond a certain time point. The two main properties of a survival function are:
+
+  1. Non-increasing property: The survival function is non-increasing, meaning that the probability of survival cannot increase as time goes on.
+  2. Starting at 1: The survival function starts at 1, meaning that at time zero, the probability of survival is 1, and as time goes on, it decreases.
+  
+  It is defined as S(t) = P(T>t) where T is the survival time. The survival function can handle right-censored data, which means that some individuals may not have experienced an event (e.g. death) at the time of analysis and their survival time is unknown. A common representation of the survival function is the Kaplan-Meier estimator, which is a non-parametric method for estimating the survival function from observed data. It works well when the censoring rate is low and the number of events is high.
+
+__Estimate Survival with Censored Data__
+
+- _Right censoring_ occurs when an individual has not yet experienced an event (e.g. death) at the time of analysis and their survival time is unknown, and it needs to be handled when estimating the survival function in survival analysis.
+- The _Kaplan-Meier estimator_ is a non-parametric method for estimating the survival function that takes into account right censoring by calculating the probability of survival at each time point as the proportion of individuals who have not yet experienced the event at that time point. The Kaplan-Meier estimator is given by the formula: S(t) = (n(t) - d(t)) / n(t).
