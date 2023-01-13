@@ -58,3 +58,7 @@ __Using Imputation to Handle Missing Data__
     5. Hot-Deck imputation: replacing missing values with values from similar observations.
 
     It's important to note that imputation of missing data can introduce bias into the dataset, so it is important to choose an appropriate method and evaluate the impact of imputation on the analysis.
+
+__Quiz__
+
+- [Decision Trees, Missing Data and Imputation](../Quizes/C2W2.md)
