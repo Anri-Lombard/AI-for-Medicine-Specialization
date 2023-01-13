@@ -72,7 +72,7 @@ __Survival Estimates__
   1. Non-increasing property: The survival function is non-increasing, meaning that the probability of survival cannot increase as time goes on.
   2. Starting at 1: The survival function starts at 1, meaning that at time zero, the probability of survival is 1, and as time goes on, it decreases.
   
-  It is defined as S(t) = P(T>t) where T is the survival time. The survival function can handle right-censored data, which means that some individuals may not have experienced an event (e.g. death) at the time of analysis and their survival time is unknown. A common representation of the survival function is the Kaplan-Meier estimator, which is a non-parametric method for estimating the survival function from observed data. It works well when the censoring rate is low and the number of events is high.
+  It is defined as $S(t) = P(T>t)$ where T is the survival time. The survival function can handle right-censored data, which means that some individuals may not have experienced an event (e.g. death) at the time of analysis and their survival time is unknown. A common representation of the survival function is the Kaplan-Meier estimator, which is a non-parametric method for estimating the survival function from observed data. It works well when the censoring rate is low and the number of events is high.
 
 __Estimate Survival with Censored Data__
 
@@ -82,4 +82,20 @@ __Estimate Survival with Censored Data__
 __Quiz__
 
 - [Survival](../Quizes/C2W3.md)
+
+## Week 4: Build a Risk Model Using Linear and Tree-based Models
+
+_Survival and Hazard Functions_
+
+- A _hazard function_, also known as the failure rate, is a function that describes the instantaneous rate of failure at a specific time point in survival analysis, which can provide insight into the underlying cause of failure and the impact of covariates on the failure rate.
+- The hazard function (h(t)) and the survival function (S(t)) are related through the following relationship:
+
+  $S(t) = exp(-∫h(t)dt)$
+
+  The survival function can be calculated from the hazard function by taking the integral of the hazard function from 0 to t and then taking the exponential of the negative of that value.
+
+  On the other hand, the hazard function can be calculated from the survival function by taking the derivative of the negative logarithm of the survival function with respect to time.
+
+  Therefore, to go from hazard function to survival function we use the cumulative integral of the hazard function and to go from survival function to hazard function we use the derivative of the negative logarithm of the survival function.
+
 
