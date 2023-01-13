@@ -78,3 +78,8 @@ __Estimate Survival with Censored Data__
 
 - _Right censoring_ occurs when an individual has not yet experienced an event (e.g. death) at the time of analysis and their survival time is unknown, and it needs to be handled when estimating the survival function in survival analysis.
 - The _Kaplan-Meier estimator_ is a non-parametric method for estimating the survival function that takes into account right censoring by calculating the probability of survival at each time point as the proportion of individuals who have not yet experienced the event at that time point. The Kaplan-Meier estimator is given by the formula: S(t) = (n(t) - d(t)) / n(t).
+
+__Quiz__
+
+- [Survival](../Quizes/C2W3.md)
+
