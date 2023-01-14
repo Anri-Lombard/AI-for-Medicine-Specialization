@@ -85,7 +85,7 @@ __Quiz__
 
 ## Week 4: Build a Risk Model Using Linear and Tree-based Models
 
-_Survival and Hazard Functions_
+__Survival and Hazard Functions__
 
 - A _hazard function_, also known as the failure rate, is a function that describes the instantaneous rate of failure at a specific time point in survival analysis, which can provide insight into the underlying cause of failure and the impact of covariates on the failure rate.
 - The hazard function (h(t)) and the survival function (S(t)) are related through the following relationship:
@@ -98,4 +98,23 @@ _Survival and Hazard Functions_
 
   Therefore, to go from hazard function to survival function we use the cumulative integral of the hazard function and to go from survival function to hazard function we use the derivative of the negative logarithm of the survival function.
 
+__Customizing Risk Models to Individual Patients__
 
+- The _Cox proportional hazard model_ is a semi-parametric model used in survival analysis that estimates the relative risk of an event (e.g. death) based on the values of certain covariates (e.g. age, sex) while accounting for censoring and it assumes that the hazard function is proportional across different levels of the covariates.
+- The Cox proportional hazard model is given by the formula: $h(t|X) = h_{0}(t) * exp(βX)$ where $h(t|X)$ is the hazard function at time t for an individual with covariate values X, $h_0(t)$ is the baseline hazard function, and $exp(βX)$ is the hazard ratio, which describes the effect of the covariates on the hazard function. β is a vector of coefficients that represents the effect of each covariate on the hazard. The hazard ratio $exp(βX)$ indicates the relative risk of an event (e.g. death) for a unit increase in the covariate, with the baseline hazard $h_0(t)$ representing the overall risk of an event.
+
+__Non-linear Risk Models with Survival Trees__
+
+- The Nelson-Aalen estimator is a non-parametric method for estimating the cumulative hazard function by counting the number of events at each time point and dividing by the number of individuals at risk at that time point and it's given by the formula: $N(t) = ∑_{i=1}^n[d(i) / n(i)]$ where N(t) is the cumulative hazard at time t, d(i) is the number of events that occur at time i, and n(i) is the number of individuals at risk at time i.
+
+__Evaluate Survival Models__
+
+- _Harrell's C-index_, also known as the concordance index, is a measure of the predictive accuracy of survival models. It is used to evaluate the ability of a model to correctly rank individuals in terms of their survival times. The C-index ranges from 0.5 to 1, with a value of 0.5 indicating random predictions and a value of 1 indicating perfect predictions.
+
+  To use Harrell's C-index to evaluate a survival model, one would first fit the model to a training dataset and then use it to predict the survival times of individuals in a validation dataset. Next, we would calculate the concordance probability for each pair of individuals in the validation dataset, which is defined as 1 if the predicted survival time of the first individual is greater than the predicted survival time of the second individual and the first individual actually has a longer survival time, 0 if the predicted and actual survival times are the same, and 0.5 if the predicted survival times are different but the actual survival times are the same. Finally, we would calculate the average concordance probability across all pairs of individuals in the validation dataset, which is the Harrell's C-index.
+
+  A higher C-index indicates a better model performance. The C-index can also be used in comparing different models or different versions of the same model.
+
+__Quiz__
+
+- [Week 4](../Quizes/C2W4.md)
