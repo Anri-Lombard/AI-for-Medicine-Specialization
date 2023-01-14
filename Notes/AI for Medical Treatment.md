@@ -30,3 +30,16 @@ __Individualized Treatment Effect__
 - _C-for-benefit_ is a metric used to evaluate the effectiveness of a treatment in a population. It is a variant of the well-known C-index, which is used to evaluate the performance of a prognostic model. Unlike the C-index, which only considers the time of event, the C-for-benefit metric also considers the magnitude of the benefit that a treatment provides. The C-for-benefit metric is calculated as the proportion of pairs of individuals where the individual who received the treatment had a better outcome than the individual who did not receive the treatment. It ranges between 0 and 1, with a value of 1 indicating that the treatment provides a benefit to all individuals who received it and a value of 0 indicating that the treatment provides no benefit to any individual.
 
     C-for-benefit is a useful metric for evaluating the effectiveness of treatments when the outcome of interest is continuous and when the benefit of the treatment is not only measured by the time of event but also by the magnitude of the benefit. It is particularly useful for evaluating treatments that have a continuous outcome such as a reduction in blood pressure, rather than a binary outcome such as death or survival.
+
+__Quiz__
+
+- [Measuring Treatment Effects](../Quizes/C3W1.md)
+
+## Week 2: Medical Question Answering
+
+__Question Answering__
+
+- _BERT (Bidirectional Encoder Representations from Transformers)_ is a transformer-based deep learning model that has been trained on a massive amount of text data, it has the ability to understand the context of a word by looking at the words that come before and after it. BERT is pre-trained on a large corpus of text and can be fine-tuned on a specific task, such as sentiment analysis or named entity recognition. BERT has been trained on a massive amount of text data and can therefore can understand the context of a word by looking at the words that come before and after it. This makes BERT particularly useful for natural language processing tasks that involve understanding the meaning of text, such as text classification, question answering, and language translation.
+- _t-SNE (t-Distributed Stochastic Neighbor Embedding)_ is a dimensionality reduction technique that is used to visualize high-dimensional data. It is particularly useful for visualizing data that has many features, such as images or text, and for exploring the structure of the data. t-SNE works by mapping the high-dimensional data to a lower-dimensional space, such as two or three dimensions, in a way that preserves the similarity between the data points. t-SNE uses a probabilistic approach to project the data points to a lower-dimensional space, so that the points that are similar in the high-dimensional space are close to each other in the low-dimensional space. The technique is particularly useful for visualizing clusters and patterns in the data, and can be used as a preprocessing step for other machine learning algorithms.
+
+
