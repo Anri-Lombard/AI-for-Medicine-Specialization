@@ -2,13 +2,13 @@
 
 ## Week 1: Treatment Effect Estimation
 
-__Randomized Control Trials__
+### __Randomized Control Trials__
 
 - In a randomized control trial (RCT), a _control group_ or a _placebo group_ is used as a comparison to the experimental group in order to evaluate the effectiveness of an intervention or treatment. The control group typically receives either no intervention or a standard treatment while the experimental group receives the intervention or treatment being studied. The use of a control group allows researchers to determine whether any observed changes in the experimental group are due to the intervention or treatment being tested or due to other factors such as chance or the natural progression of the disease. The use of a placebo group is also common in clinical trials of drugs where the placebo group receives a treatment that looks similar to the experimental treatment but has no active ingredient, this helps to control for the placebo effect and allows researchers to determine whether any observed changes in the experimental group are due to the drug or due to other factors such as chance or the natural progression of the disease.
 - _Absolute risk_ refers to the probability of a specific event occurring in a population. It is often used in medical research to express the likelihood of an individual developing a certain condition or disease, or experiencing a certain outcome. Absolute risk is typically measured as a percentage or as a ratio and it is calculated by dividing the number of events (e.g. number of individuals who develop a certain condition) by the total number of individuals in the population. Absolute risk can be used to compare the risk of a certain event occurring between different groups of individuals or to evaluate the effectiveness of an intervention or treatment. It's important to note that absolute risk is different from relative risk which is the ratio of the probability of an event in one group to the probability of the same event in another group. Absolute risk gives the specific probability of an event occurring in a population, while relative risk compares the risk between different groups.
 - _Selection bias_ refers to the systematic differences in characteristics between the individuals who are selected for a study and those who are not, that may affect the results of the study.
 
-__Average Treatment Effect__
+### __Average Treatment Effect__
 
 - The _Neyman-Rubin_ causal model, also known as the potential outcomes framework, is a statistical framework used to infer causality from observational data. It is based on the idea that for each individual, there are two potential outcomes: one that would occur if the individual were exposed to a certain treatment or intervention (the treatment outcome), and one that would occur if the individual were not exposed (the control outcome). The model posits that the difference between these two outcomes, known as the causal effect, can be used to infer causality. In order to identify the causal effect, the model relies on the assumption of no unmeasured confounding, which means that any observed associations between the treatment and the outcome can be attributed to the treatment and not to other factors.
 - _ATE (Average Treatment Effect)_ and _ARR (Absolute Risk Reduction)_ are two metrics used to measure the effectiveness of an intervention or treatment in a population.
@@ -25,30 +25,38 @@ __Average Treatment Effect__
 
     The Single-tree S-learner method is a machine learning method that uses a single decision tree to estimate treatment effects from observational data. This method is used to predict the outcome of a given intervention or treatment on a specific outcome, it uses a set of features to predict the outcome for both the treatment and control groups, and then compares the predictions to estimate the treatment effect. The Single-tree S-learner method is useful when there are fewer confounding variables and when the treatment effect is homogeneous across the population. It's also simpler to implement and understand when compared to the Two-tree T-learner method.
 
-__Individualized Treatment Effect__
+### __Individualized Treatment Effect__
 
 - _C-for-benefit_ is a metric used to evaluate the effectiveness of a treatment in a population. It is a variant of the well-known C-index, which is used to evaluate the performance of a prognostic model. Unlike the C-index, which only considers the time of event, the C-for-benefit metric also considers the magnitude of the benefit that a treatment provides. The C-for-benefit metric is calculated as the proportion of pairs of individuals where the individual who received the treatment had a better outcome than the individual who did not receive the treatment. It ranges between 0 and 1, with a value of 1 indicating that the treatment provides a benefit to all individuals who received it and a value of 0 indicating that the treatment provides no benefit to any individual.
 
     C-for-benefit is a useful metric for evaluating the effectiveness of treatments when the outcome of interest is continuous and when the benefit of the treatment is not only measured by the time of event but also by the magnitude of the benefit. It is particularly useful for evaluating treatments that have a continuous outcome such as a reduction in blood pressure, rather than a binary outcome such as death or survival.
 
-__Quiz__
+### __Quiz 1__
 
 - [Measuring Treatment Effects](../Quizes/C3W1.md)
 
 ## Week 2: Medical Question Answering
 
-__Question Answering__
+### __Question Answering__
 
 - _BERT (Bidirectional Encoder Representations from Transformers)_ is a transformer-based deep learning model that has been trained on a massive amount of text data, it has the ability to understand the context of a word by looking at the words that come before and after it. BERT is pre-trained on a large corpus of text and can be fine-tuned on a specific task, such as sentiment analysis or named entity recognition. BERT has been trained on a massive amount of text data and can therefore can understand the context of a word by looking at the words that come before and after it. This makes BERT particularly useful for natural language processing tasks that involve understanding the meaning of text, such as text classification, question answering, and language translation.
 - _t-SNE (t-Distributed Stochastic Neighbor Embedding)_ is a dimensionality reduction technique that is used to visualize high-dimensional data. It is particularly useful for visualizing data that has many features, such as images or text, and for exploring the structure of the data. t-SNE works by mapping the high-dimensional data to a lower-dimensional space, such as two or three dimensions, in a way that preserves the similarity between the data points. t-SNE uses a probabilistic approach to project the data points to a lower-dimensional space, so that the points that are similar in the high-dimensional space are close to each other in the low-dimensional space. The technique is particularly useful for visualizing clusters and patterns in the data, and can be used as a preprocessing step for other machine learning algorithms.
 
-__Automatic Labeling__
+### __Automatic Labeling__
 
 - _Automatic labeling_, also known as annotation, is the process of using algorithms and machine learning techniques to automatically assign labels or tags to data. This can include tasks such as object detection, image classification, text classification, and named entity recognition. Automatic labeling can be applied to both structured and unstructured data, such as images, text, audio, and video. The goal of automatic labeling is to automate the time-consuming and labor-intensive task of manual labeling, in order to increase the efficiency and accuracy of the labeling process. The process typically includes using machine learning algorithms to train a model on a labeled dataset, and then using the trained model to label new data. The quality of the automatic labeling depends on the quality of the training dataset, the complexity of the task, and the algorithm used.
 
-__Evaluate Automatic Labeling__
+### __Evaluate Automatic Labeling__
 
 - _Precision_ is a measure of how many of the positive predictions made by the model are actually correct. It is calculated as the number of true positive divided by the number of true positive plus false positive.
 - _Recall_ is a measure of how well the model is able to identify all the positive examples. It is calculated as the number of true positives divided by the number of true positives plus false negatives.
 - _F1 score_ is a measure that combines precision and recall and is calculated as the harmonic mean of precision and recall. It gives a balance between precision and recall by considering both the true positive rate and the positive predictive value. It ranges from 0 to 1, with 1 being the best score.
 - In the field of machine learning, _micro-average_ and _macro-average_ are two ways of calculating performance metrics for multi-class classification problems. Micro-average considers the performance of the model for each class separately, it sums the true positives, false positives and false negatives across all the classes and then compute the performance metric. It is useful when the dataset is imbalanced and there are some classes that are under-represented. Micro-average gives more weight to the classes with more instances and it is sensitive to class imbalance. On the other hand, Macro-average calculates the performance metric separately for each class, and then takes the average of these metrics. It is useful when all the classes are equally important and need to be considered with equal weight. Macro-average is not sensitive to class imbalance and it gives equal weight to all classes regardless of the number of instances they have.
+
+### __Quiz 2__
+
+- [Information Extraction with NLP](../Quizes/C3W2.md)
+
+## Week 3: ML Interpretation
+
+### __Feature Importance__
