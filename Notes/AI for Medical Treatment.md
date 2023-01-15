@@ -60,3 +60,5 @@
 ## Week 3: ML Interpretation
 
 ### __Feature Importance__
+
+- _Shapley values_ and _SHAP (SHapley Additive exPlanations)_ are methods used to determine the feature importance of machine learning models. Shapley values are a way to fairly distribute a value among a group of individuals, where the value of each individual is dependent on the presence or absence of other individuals. In the context of feature importance, Shapley values assign a contribution value to each feature, taking into account the interactions between the features. SHAP is an implementation of Shapley values specifically designed for machine learning models, it uses the concept of a coalition game to calculate the contribution of each feature. The method calculates the expectation of the feature's contribution over all possible coalitions of features. It is a unified and consistent method that works for any model and it includes both feature-value and feature-order information.
