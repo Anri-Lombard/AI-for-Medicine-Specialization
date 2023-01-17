@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository includes my notes on the AI for Medicine Specialization. Notes are balanced between terse summaries and more in-depth explanations of concepts when needed.
+This repository includes my notes, labs, and assignments on the AI for Medicine Specialization. Notes are balanced between terse summaries and more in-depth explanations of concepts when needed.
 
 ## Specialization Structure and Notes
 
