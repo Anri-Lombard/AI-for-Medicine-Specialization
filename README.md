@@ -1,5 +1,9 @@
 # AI for Medicine Specialization
 
+## Certificate
+
+[Specialization](./Coursera%20PYFZ5YHDR48V.pdf)
+
 ## Description
 
 This repository includes my notes, labs, and assignments on the AI for Medicine Specialization. Notes are balanced between terse summaries and more in-depth explanations of concepts when needed.
